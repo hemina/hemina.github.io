@@ -64,7 +64,7 @@ Visualization convolution filters
 50000 fouleurs (students, retired, enployee)
 
 --------------------------
-#### [Here is the official reference blog](http://nuit-blanche.blogspot.fr/2017/01/ce-soir-paris-machine-learning-meetup-5.html)
+[Here is the official reference blog](http://nuit-blanche.blogspot.fr/2017/01/ce-soir-paris-machine-learning-meetup-5.html)
 
 ------------------------------
 Chinese version reflective writing:
