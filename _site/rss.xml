@@ -5,8 +5,8 @@
         <description>Mina's Blog - Mina He</description>
         <link>http://hemina.github.io</link>
         <atom:link href="http://hemina.github.io/rss.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Thu, 12 Jan 2017 11:36:25 +0100</lastBuildDate>
-        <pubDate>Thu, 12 Jan 2017 11:36:25 +0100</pubDate>
+        <lastBuildDate>Thu, 12 Jan 2017 13:20:57 +0100</lastBuildDate>
+        <pubDate>Thu, 12 Jan 2017 13:20:57 +0100</pubDate>
         <ttl>60</ttl>
 
 
@@ -57,16 +57,17 @@
 
 &lt;p&gt;Need to retrain model with new data&lt;/p&gt;
 
-&lt;p&gt;MOA(Massive Online Analysis)&lt;/p&gt;
+&lt;p&gt;MOA (Massive Online Analysis)&lt;/p&gt;
 
 &lt;p&gt;Vertical Parallelism&lt;/p&gt;
 
-&lt;p&gt;sequential evaluation for online learning&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.analyticsvidhya.com/blog/2015/01/introduction-online-machine-learning-simplified-2/&quot;&gt;sequential evaluation for online learning&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;gan-generative-adversarial-networks&quot;&gt;GAN (Generative Adversarial Networks)&lt;/h2&gt;
 &lt;p&gt;Speaker: &lt;a href=&quot;https://www.linkedin.com/in/julien-launay-400a7512a/&quot;&gt;Julien Launay&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.dropbox.com/s/uy56cbkf9czww9m/Paris%20Machine%20Learning%20Meetup%20-%20Cracking%20Crack%20Mechanics%20%28NOANIM%29.pdf?dl=0&quot;&gt;ppt here&lt;/a&gt;&lt;/p&gt;
+
 &lt;blockquote&gt;
   &lt;p&gt;When modeling transfers through a medium in civil engineering, knowing the precise influence of cracks is often complicated, doubly so since the transfer and fracture problems are often heavily linked. I will present a new way to generate “fake” cracking patterns using GANs, and will then expand on how such novel techniques can be used to learn more about fracture mechanics.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -91,6 +92,7 @@
 通过产生器和判别器生成可信度高的含label图像训练集，用在计算机视觉领域。&lt;/p&gt;
 
 &lt;p&gt;还有一个来自meetup赞助商的广告，因为内容比较有意思，所以也写进来了。鉴于监督学习在工业界需要大量的人力labelling，这家公司就搭建了一个网络平台，广大闲人们可以通过零散的labelling work赚取外快，业界又可以在短期内迅速获得人力标记的高质量训练集。&lt;/p&gt;
+
 </description>
                 <link>http://hemina.github.io/2017/01/11/meetup-machine-learning</link>
                 <guid>http://hemina.github.io/2017/01/11/meetup-machine-learning</guid>

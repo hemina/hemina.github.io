@@ -49,7 +49,7 @@ MOA (Massive Online Analysis)
 
 Vertical Parallelism 
 
-sequential evaluation for online learning
+[sequential evaluation for online learning](https://www.analyticsvidhya.com/blog/2015/01/introduction-online-machine-learning-simplified-2/)
 
 ## GAN (Generative Adversarial Networks)
 Speaker: [Julien Launay](https://www.linkedin.com/in/julien-launay-400a7512a/)
@@ -78,3 +78,5 @@ GAN（Generative Adversarial Networks）
 通过产生器和判别器生成可信度高的含label图像训练集，用在计算机视觉领域。
 
 还有一个来自meetup赞助商的广告，因为内容比较有意思，所以也写进来了。鉴于监督学习在工业界需要大量的人力labelling，这家公司就搭建了一个网络平台，广大闲人们可以通过零散的labelling work赚取外快，业界又可以在短期内迅速获得人力标记的高质量训练集。
+
+                                
