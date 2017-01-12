@@ -45,7 +45,7 @@ Real-Time Analytics => Streaming model
 
 Need to retrain model with new data
 
-MOA(Massive Online Analysis)
+MOA (Massive Online Analysis)
 
 Vertical Parallelism 
 
@@ -55,6 +55,7 @@ sequential evaluation for online learning
 Speaker: [Julien Launay](https://www.linkedin.com/in/julien-launay-400a7512a/)
 
 [ppt here](https://www.dropbox.com/s/uy56cbkf9czww9m/Paris%20Machine%20Learning%20Meetup%20-%20Cracking%20Crack%20Mechanics%20%28NOANIM%29.pdf?dl=0)
+
 >When modeling transfers through a medium in civil engineering, knowing the precise influence of cracks is often complicated, doubly so since the transfer and fracture problems are often heavily linked. I will present a new way to generate “fake” cracking patterns using GANs, and will then expand on how such novel techniques can be used to learn more about fracture mechanics.  
 
 Visualization convolution filters
