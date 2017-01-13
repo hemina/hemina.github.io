@@ -5,10 +5,136 @@
         <description>Mina's Wonderland - Mina He</description>
         <link>http://hemina.github.io</link>
         <atom:link href="http://hemina.github.io/rss.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Thu, 12 Jan 2017 14:25:37 +0100</lastBuildDate>
-        <pubDate>Thu, 12 Jan 2017 14:25:37 +0100</pubDate>
+        <lastBuildDate>Fri, 13 Jan 2017 12:09:58 +0100</lastBuildDate>
+        <pubDate>Fri, 13 Jan 2017 12:09:58 +0100</pubDate>
         <ttl>60</ttl>
 
+
+        <item>
+                <title>Next station</title>
+                <description>
+&lt;h2 id=&quot;提出问题&quot;&gt;提出问题&lt;/h2&gt;
+&lt;p&gt;周二下午跟公司高层们开会，商讨我司在Data领域的未来走向。&lt;/p&gt;
+
+&lt;p&gt;我提出来很多的可能性，比如，在unstructured data界，相比视频音频图像，文本凭其杰出的信息压缩能力胜出。文本处理会是我们用机器获取信息最高效的方式。Input data基本确定了之后，问题转化成，我们需要怎样的output？&lt;/p&gt;
+
+&lt;h2 id=&quot;方案探讨&quot;&gt;方案探讨&lt;/h2&gt;
+&lt;p&gt;结合业界的state-of-art和公司的商业目标，我提出的以下方案在会议中被探讨:&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;将sentiment analysis 结合 Named Entity Recognition 用于增强微观经济分析（针对各上市公司Entity），和宏观经济分析（针对产业，国家的Entity）。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;本意是想利用这个分析结果修正finance团队从市场规律角度提出的Robot Advisor算法，更好地把握和预测金融市场。然而被在座的高层质疑起我的逻辑。他们认为sentiment是因，而市场是果，所以finance团队的算法中，既然是以分析预测市场走势为出发点，就无需再追究其舆论源头。&lt;/p&gt;
+
+&lt;p&gt;这个问题我至今还没想明白。&lt;/p&gt;
+
+&lt;p&gt;想不明白的原因之一，是不知道怎么处理Knowledge Base中的过时信息，唯一能想到的就是依据时间距离，空间距离等各项因素对各个数据源提供的feature加权，定期，比如每月，用新权值&amp;amp;新语料更新模型。&lt;/p&gt;
+
+&lt;p&gt;我认为，虽然市场走向已经是消费者sentiment的一种表达，但是这个表达总是有delay的，所以我们可以利用这个delay来及时预测市场。而且遥远的历史信息，也会有残余的影响，所以上述的按距离加权是个很合理的思路。&lt;strong&gt;Mark一记！预备再与同事们探讨。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;刚同事提出了一个不同的观点，也很有意思。关于sentiment analysis 与市场走势的关系，并不见得是正相关，投资策略很有可能是，在万众唾弃，企业最被贬低时（比如此刻的&lt;code class=&quot;highlighter-rouge&quot;&gt;三星&lt;/code&gt;）抄底买入，因为此时企业被舆论低估，面临很大的升值空间。所以要合理拼接sentiment analysis与原本的金融预测算法，把握二者的关联性。我跟同事都相信，只要拿到这方面的可靠数据，这就不再是个难题。让我联想到alphaGo的算法，&lt;code class=&quot;highlighter-rouge&quot;&gt;cost function&lt;/code&gt;设定的就是要赢。那我们这里的&lt;code class=&quot;highlighter-rouge&quot;&gt;cost function&lt;/code&gt;应该就是在历史数据中获取最大的盈利了。&lt;/p&gt;
+
+&lt;p&gt;sentiment analysis 结果的输出形式，一种是生成structured data形式的表格文档，传达给我司内部的基金经理，或效仿&lt;code class=&quot;highlighter-rouge&quot;&gt;Morningstar&lt;/code&gt;公开成权威rating，也可以作为下文要讲述的Chatbot的一个答疑模式。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;受Machine Reading Comprehension 启发，无论面向机器或是人，想想从小到大考过的语言考试，阅读理解题的考察方式通常也都是问答。问答系统在我司的应用，我想也就是chatbot了。我计划给机器喂养大量的金融读物，让机器成为一个金融专家。然后deploy到我司的各个digital平台，比如我司官网，&lt;code class=&quot;highlighter-rouge&quot;&gt;robot advisor&lt;/code&gt;页面，甚至是移动端的&lt;code class=&quot;highlighter-rouge&quot;&gt;investo&lt;/code&gt;，以及各大社交网络的官方平台，比如&lt;code class=&quot;highlighter-rouge&quot;&gt;Facebook&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;Twitter&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;Snapchat&lt;/code&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;在这里被火眼金睛的高层们质疑的是，ChatBot的功能究竟是回答问题还是与用户互动？二者的区别在于，每则问答对话是否独立。坦白讲这对我来说也是全新的领域。&lt;strong&gt;Mark一记！预备补习的功课。&lt;/strong&gt; 而且这里其实提出了很多不同的功能类型，比如官网跟&lt;code class=&quot;highlighter-rouge&quot;&gt;robot advisor&lt;/code&gt;虽然同是客服，用到的训练集就不一样。而&lt;code class=&quot;highlighter-rouge&quot;&gt;investo&lt;/code&gt;上，可能更多的是一个用来被咨询的金融专家的身份。而社交平台上，需要的就是一个更活泼的互动机器人。越想越复杂，但是也越来越靠近我最初的金融机器人梦想了。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;应用&lt;code class=&quot;highlighter-rouge&quot;&gt;Automatic summarization&lt;/code&gt;自动生成精简的关键信息，节约读者时间。发送自动生成的&lt;code class=&quot;highlighter-rouge&quot;&gt;Newslatter&lt;/code&gt;给订阅者，或者提供类似&lt;code class=&quot;highlighter-rouge&quot;&gt;Google Translation&lt;/code&gt;的service on request。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;被问及该技术当前的成熟度及其原理，确保可信度。高层们都偏好稳妥路线。一个疑问是，这个功能是否能真正帮助我们节省阅读时间？如果不是，这个提案就完全失去了应用价值。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;MyContact&lt;/code&gt;， 结合&lt;code class=&quot;highlighter-rouge&quot;&gt;linkedin&lt;/code&gt;数据与内部现有贸易记录的潜在客户推荐系统&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;并不确定是否能顺利获取&lt;code class=&quot;highlighter-rouge&quot;&gt;linkedin&lt;/code&gt;数据&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;基于已有数据的&lt;code class=&quot;highlighter-rouge&quot;&gt;Data Mining&lt;/code&gt;工作，类似我已经完成的关于Sales Report记录分析&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;喜欢这种类型的任务，工作起来很让我入迷。高层们担心数据不够完整，不够代表性，导致偏执的分析结果。我对此的回答是，首先机器只是一个辅助工具，并非决策工具，其意义在于能帮助人提供高计算能力的参考，最后的可信度，还是应该由使用者斟酌，当然我会考虑纳入上一篇博文中提及的&lt;code class=&quot;highlighter-rouge&quot;&gt;LIME&lt;/code&gt;，更好地解释机器的运算结果。再者，机器学习中&lt;code class=&quot;highlighter-rouge&quot;&gt;Error Analysis&lt;/code&gt;的步骤就是专门用来针对性修正偏执的分析结果。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;时间序列分析，量化预测销售，市场等各类信息&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;关于数据是否适用于该类算法，算法可信度的担心&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;社交网络有影响力人群分析，邀请来我司的大型活动，帮助提升口碑&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;大boss笑谈说，活动上可千万不能惹着人家 😂&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;机器翻译&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;目前的自然语言处理，受语料限制，都是只考虑英语，法语支持必不可少，慢慢来&lt;/p&gt;
+
+&lt;h2 id=&quot;总结思考&quot;&gt;总结思考&lt;/h2&gt;
+&lt;p&gt;会一直开到晚上8点，临走前在公司门口又遇见大boss，跟我们强调说，需要做的事情那么多，人手又有限，现在要先划分优先级，从最重要的和自己最感兴趣的着手，他们会从各个角度为我们提供帮助。&lt;/p&gt;
+
+&lt;p&gt;我的首选是&lt;code class=&quot;highlighter-rouge&quot;&gt;Chatbot&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;Data Mining&lt;/code&gt;，前者是因为好奇，后者是因为入迷。
+我可能先需要找到一个现有开源的&lt;code class=&quot;highlighter-rouge&quot;&gt;Chatbot&lt;/code&gt;框架，然后再慢慢往里面添加人工智能的算法。&lt;/p&gt;
+</description>
+                <link>http://hemina.github.io/work/2017/01/12/next-station</link>
+                <guid>http://hemina.github.io/work/2017/01/12/next-station</guid>
+                <pubDate>Thu, 12 Jan 2017 00:00:00 +0100</pubDate>
+        </item>
+
+        <item>
+                <title>Meetup chatbot</title>
+                <description>
+&lt;h2 id=&quot;别人家chatbot用的技术&quot;&gt;别人家chatbot用的技术:&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Redis + AWS hebergement + Microsoft LUIS&lt;/li&gt;
+  &lt;li&gt;Slack plateform&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;chatbot设计前最需要考虑的问题&quot;&gt;chatbot设计前最需要考虑的问题：&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;怎样让chatbot为我们带来更多的客户？&lt;a href=&quot;m.me/HerobotFR&quot;&gt;Game of Thrones 基于chatbot的游戏&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;支持拓展学习功能的archi，这是个很复杂的问题&lt;/li&gt;
+  &lt;li&gt;支持多门语言的拓展&lt;/li&gt;
+  &lt;li&gt;为每个用户个性化它的专属bot，可以在沟通一开始给用户一两道选择题对用户分类. &lt;a href=&quot;m.me/ParAmourDuRugby&quot;&gt;ParAmourDuRugby&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;bot可以作为Newsletters发布平台&lt;/li&gt;
+  &lt;li&gt;比起打字阐述，用户总是更喜欢做选择题&lt;/li&gt;
+  &lt;li&gt;chatbot的特点就是要活泼，会讨人喜欢. &lt;a href=&quot;http://m.me/meetcitron&quot;&gt;citron&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;利用好&lt;code class=&quot;highlighter-rouge&quot;&gt;fb messenger&lt;/code&gt; 10亿的群众基础&lt;/li&gt;
+  &lt;li&gt;bot也需要被推广，比如公布在FB公众页面上&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+                <link>http://hemina.github.io/tech/2017/01/12/meetup-chatbot</link>
+                <guid>http://hemina.github.io/tech/2017/01/12/meetup-chatbot</guid>
+                <pubDate>Thu, 12 Jan 2017 00:00:00 +0100</pubDate>
+        </item>
 
         <item>
                 <title>Meetup Machine Learning</title>
@@ -94,8 +220,8 @@
 &lt;p&gt;还有一个来自meetup赞助商的广告，因为内容比较有意思，所以也写进来了。鉴于监督学习在工业界需要大量的人力labelling，这家公司就搭建了一个网络平台，广大闲人们可以通过零散的labelling work赚取外快，业界又可以在短期内迅速获得人力标记的高质量训练集。&lt;/p&gt;
 
 </description>
-                <link>http://hemina.github.io/2017/01/11/meetup-machine-learning</link>
-                <guid>http://hemina.github.io/2017/01/11/meetup-machine-learning</guid>
+                <link>http://hemina.github.io/tech/2017/01/11/meetup-machine-learning</link>
+                <guid>http://hemina.github.io/tech/2017/01/11/meetup-machine-learning</guid>
                 <pubDate>Wed, 11 Jan 2017 00:00:00 +0100</pubDate>
         </item>
 
@@ -113,8 +239,8 @@
 &lt;p&gt;好期待看到这个少女心粉色系的极客日记本慢慢完整的样子。&lt;/p&gt;
 
 </description>
-                <link>http://hemina.github.io/2017/01/11/</link>
-                <guid>http://hemina.github.io/2017/01/</guid>
+                <link>http://hemina.github.io/%E7%94%9F%E6%B4%BB/2017/01/11/</link>
+                <guid>http://hemina.github.io/%E7%94%9F%E6%B4%BB/2017/01/</guid>
                 <pubDate>Wed, 11 Jan 2017 00:00:00 +0100</pubDate>
         </item>
 

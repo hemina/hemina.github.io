@@ -1,0 +1,369 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Next station</title>
+    <meta name="description" content="">
+    <meta name="author" content="Mina He">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap styles -->
+    <link href="/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional theme -->
+    <link href="/assets/themes/bootstrap-3/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Sticky Footer -->
+    <link href="/assets/themes/bootstrap-3/bootstrap/css/bs-sticky-footer.css" rel="stylesheet">
+    
+    <!-- Custom styles -->
+    <link href="/assets/themes/bootstrap-3/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+    <div id="wrap">
+      <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Mina's Wonderland</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags">Tags</a></li>
+      	
+      
+    
+  
+    
+  
+    
+  
+
+
+
+          </ul>
+          <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+
+      <div class="container">
+        <!-- 
+ -->
+<div class="page-header">
+  <h1>Next station </h1>
+</div>
+
+<div class="row post-full">
+  <div class="col-xs-12">
+    <div class="date">
+      <span>12 January 2017</span>
+    </div>
+    <div class="content">
+      
+<h2 id="提出问题">提出问题</h2>
+<p>周二下午跟公司高层们开会，商讨我司在Data领域的未来走向。</p>
+
+<p>我提出来很多的可能性，比如，在unstructured data界，相比视频音频图像，文本凭其杰出的信息压缩能力胜出。文本处理会是我们用机器获取信息最高效的方式。Input data基本确定了之后，问题转化成，我们需要怎样的output？</p>
+
+<h2 id="方案探讨">方案探讨</h2>
+<p>结合业界的state-of-art和公司的商业目标，我提出的以下方案在会议中被探讨:</p>
+
+<hr />
+
+<blockquote>
+  <p>将sentiment analysis 结合 Named Entity Recognition 用于增强微观经济分析（针对各上市公司Entity），和宏观经济分析（针对产业，国家的Entity）。</p>
+</blockquote>
+
+<p>本意是想利用这个分析结果修正finance团队从市场规律角度提出的Robot Advisor算法，更好地把握和预测金融市场。然而被在座的高层质疑起我的逻辑。他们认为sentiment是因，而市场是果，所以finance团队的算法中，既然是以分析预测市场走势为出发点，就无需再追究其舆论源头。</p>
+
+<p>这个问题我至今还没想明白。</p>
+
+<p>想不明白的原因之一，是不知道怎么处理Knowledge Base中的过时信息，唯一能想到的就是依据时间距离，空间距离等各项因素对各个数据源提供的feature加权，定期，比如每月，用新权值&amp;新语料更新模型。</p>
+
+<p>我认为，虽然市场走向已经是消费者sentiment的一种表达，但是这个表达总是有delay的，所以我们可以利用这个delay来及时预测市场。而且遥远的历史信息，也会有残余的影响，所以上述的按距离加权是个很合理的思路。<strong>Mark一记！预备再与同事们探讨。</strong></p>
+
+<p>刚同事提出了一个不同的观点，也很有意思。关于sentiment analysis 与市场走势的关系，并不见得是正相关，投资策略很有可能是，在万众唾弃，企业最被贬低时（比如此刻的<code class="highlighter-rouge">三星</code>）抄底买入，因为此时企业被舆论低估，面临很大的升值空间。所以要合理拼接sentiment analysis与原本的金融预测算法，把握二者的关联性。我跟同事都相信，只要拿到这方面的可靠数据，这就不再是个难题。让我联想到alphaGo的算法，<code class="highlighter-rouge">cost function</code>设定的就是要赢。那我们这里的<code class="highlighter-rouge">cost function</code>应该就是在历史数据中获取最大的盈利了。</p>
+
+<p>sentiment analysis 结果的输出形式，一种是生成structured data形式的表格文档，传达给我司内部的基金经理，或效仿<code class="highlighter-rouge">Morningstar</code>公开成权威rating，也可以作为下文要讲述的Chatbot的一个答疑模式。</p>
+
+<hr />
+
+<blockquote>
+  <p>受Machine Reading Comprehension 启发，无论面向机器或是人，想想从小到大考过的语言考试，阅读理解题的考察方式通常也都是问答。问答系统在我司的应用，我想也就是chatbot了。我计划给机器喂养大量的金融读物，让机器成为一个金融专家。然后deploy到我司的各个digital平台，比如我司官网，<code class="highlighter-rouge">robot advisor</code>页面，甚至是移动端的<code class="highlighter-rouge">investo</code>，以及各大社交网络的官方平台，比如<code class="highlighter-rouge">Facebook</code>，<code class="highlighter-rouge">Twitter</code>，<code class="highlighter-rouge">Snapchat</code>。</p>
+</blockquote>
+
+<p>在这里被火眼金睛的高层们质疑的是，ChatBot的功能究竟是回答问题还是与用户互动？二者的区别在于，每则问答对话是否独立。坦白讲这对我来说也是全新的领域。<strong>Mark一记！预备补习的功课。</strong> 而且这里其实提出了很多不同的功能类型，比如官网跟<code class="highlighter-rouge">robot advisor</code>虽然同是客服，用到的训练集就不一样。而<code class="highlighter-rouge">investo</code>上，可能更多的是一个用来被咨询的金融专家的身份。而社交平台上，需要的就是一个更活泼的互动机器人。越想越复杂，但是也越来越靠近我最初的金融机器人梦想了。</p>
+
+<hr />
+
+<blockquote>
+  <p>应用<code class="highlighter-rouge">Automatic summarization</code>自动生成精简的关键信息，节约读者时间。发送自动生成的<code class="highlighter-rouge">Newslatter</code>给订阅者，或者提供类似<code class="highlighter-rouge">Google Translation</code>的service on request。</p>
+</blockquote>
+
+<p>被问及该技术当前的成熟度及其原理，确保可信度。高层们都偏好稳妥路线。一个疑问是，这个功能是否能真正帮助我们节省阅读时间？如果不是，这个提案就完全失去了应用价值。</p>
+
+<hr />
+
+<blockquote>
+  <p><code class="highlighter-rouge">MyContact</code>， 结合<code class="highlighter-rouge">linkedin</code>数据与内部现有贸易记录的潜在客户推荐系统</p>
+</blockquote>
+
+<p>并不确定是否能顺利获取<code class="highlighter-rouge">linkedin</code>数据</p>
+
+<hr />
+
+<blockquote>
+  <p>基于已有数据的<code class="highlighter-rouge">Data Mining</code>工作，类似我已经完成的关于Sales Report记录分析</p>
+</blockquote>
+
+<p>喜欢这种类型的任务，工作起来很让我入迷。高层们担心数据不够完整，不够代表性，导致偏执的分析结果。我对此的回答是，首先机器只是一个辅助工具，并非决策工具，其意义在于能帮助人提供高计算能力的参考，最后的可信度，还是应该由使用者斟酌，当然我会考虑纳入上一篇博文中提及的<code class="highlighter-rouge">LIME</code>，更好地解释机器的运算结果。再者，机器学习中<code class="highlighter-rouge">Error Analysis</code>的步骤就是专门用来针对性修正偏执的分析结果。</p>
+
+<hr />
+
+<blockquote>
+  <p>时间序列分析，量化预测销售，市场等各类信息</p>
+</blockquote>
+
+<p>关于数据是否适用于该类算法，算法可信度的担心</p>
+
+<hr />
+
+<blockquote>
+  <p>社交网络有影响力人群分析，邀请来我司的大型活动，帮助提升口碑</p>
+</blockquote>
+
+<p>大boss笑谈说，活动上可千万不能惹着人家 😂</p>
+
+<hr />
+
+<blockquote>
+  <p>机器翻译</p>
+</blockquote>
+
+<p>目前的自然语言处理，受语料限制，都是只考虑英语，法语支持必不可少，慢慢来</p>
+
+<h2 id="总结思考">总结思考</h2>
+<p>会一直开到晚上8点，临走前在公司门口又遇见大boss，跟我们强调说，需要做的事情那么多，人手又有限，现在要先划分优先级，从最重要的和自己最感兴趣的着手，他们会从各个角度为我们提供帮助。</p>
+
+<p>我的首选是<code class="highlighter-rouge">Chatbot</code>和<code class="highlighter-rouge">Data Mining</code>，前者是因为好奇，后者是因为入迷。
+我可能先需要找到一个现有开源的<code class="highlighter-rouge">Chatbot</code>框架，然后再慢慢往里面添加人工智能的算法。</p>
+
+    </div>
+
+  
+    <ul class="tag_box inline">
+      <li><i class="glyphicon glyphicon-open"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/categories.html#Work-ref">
+    		Work <span>1</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+    
+
+  
+    <ul class="tag_box inline">
+      <li><i class="glyphicon glyphicon-tags"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/tags.html#CN-ref">CN <span>3</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  
+    <hr>
+    <ul class="pagination">
+    
+      <li class="prev"><a href="/tech/2017/01/12/meetup-chatbot" title="Meetup chatbot">&laquo; Previous</a></li>
+    
+      <li><a href="/archive.html">Archive</a></li>
+    
+      <li class="next disabled"><a>Next &rarr;</a>
+    
+    </ul>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+</div>
+
+<script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-0.1.1.js"></script>
+<!-- count visiters -->
+
+<span data-hk-page="current"> - </span>
+<!-- show visiters -->
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = '//hemina-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+      </div>
+
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <p>&copy; 2017 Mina He
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
+        </p>
+      </div>
+    </div>
+
+    
+
+
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/assets/themes/bootstrap-3/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+<script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-0.1.1.js"></script>
+<!-- count visiters -->
+
+<span data-hk-page="current"> - </span>
+<!-- show visiters -->

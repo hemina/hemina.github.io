@@ -2,8 +2,8 @@
 layout: post
 title: "Meetup Machine Learning"
 description: ""
-category: 
-tags: []
+category: "Tech"
+tags: [Meetup Paris, EN]
 ---
 {% include JB/setup %}
 
