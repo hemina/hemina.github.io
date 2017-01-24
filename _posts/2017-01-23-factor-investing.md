@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Factor Investing"
+title: "factor investing"
 description: "资产管理的价值，方法，与大数据的联系"
 category: "Work"
 tags: [FR][Asset Management]
