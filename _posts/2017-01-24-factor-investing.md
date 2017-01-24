@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "factor investing"
+title: "Factor Investing"
 description: "资产管理的价值，方法，与大数据的联系"
 category: "Work"
 tags: [FR][Asset Management]
 ---
 {% include JB/setup %}
-
 19th ciècle, seule invest: rent(obligation)   
 fin 19th ciècle: action    
 porte-feuille market cap =>
@@ -78,4 +77,3 @@ La gestion d’actifs à l’ère du « big data » <http://investors-corner.bnp
 Youtube :  
 How cognitive biases can impact your investment decisions ? <https://www.youtube.com/watch?v=gQBhog0bzRA&index=1&t=2s&list=PLrng27F2xb6RMR6yrQno9g-7_72xM-KUe>  
 Smart Beta and Factor Investing : toward a more rational approach to investing : <https://www.youtube.com/watch?v=LM8SNPalrIY&list=PLrng27F2xb6RMR6yrQno9g-7_72xM-KUe&index=2>
-
