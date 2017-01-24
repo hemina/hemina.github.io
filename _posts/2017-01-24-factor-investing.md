@@ -1,11 +1,14 @@
 ---
 layout: post
 title: "Factor Investing"
-description: "资产管理的价值，方法，与大数据的联系"
+description: 
 category: "Work"
 tags: [FR][Asset Management]
 ---
 {% include JB/setup %}
+
+资产管理的价值，方法，与大数据的联系
+
 19th ciècle, seule invest: rent(obligation)   
 fin 19th ciècle: action    
 porte-feuille market cap =>
