@@ -3,7 +3,7 @@ layout: post
 title: "Meetup Criteo"
 description: ""
 category: "Tech"
-tags: [Meetup Paris, FR]
+tags: [Meetup Paris, EN]
 ---
 {% include JB/setup %}
 
