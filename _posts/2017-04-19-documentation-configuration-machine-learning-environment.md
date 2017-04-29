@@ -441,7 +441,7 @@ nproc
 fakeroot make-kpkg --initrd --revision=1.0.noobunbox kernel_image kernel_headers -j 44
 ```
 
-## 8. Test with Virtual Machine
+## 9. Test with Virtual Machine
 
 ### 1) Install VirtualBox on Ubuntu
 ```
