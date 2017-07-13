@@ -18,6 +18,7 @@ Un bloc Hadoop est unfichier de HDFS, taille 64MB, tous les blocs dans un dossie
 au lieu de faire transformation sur disques(Hadoop MapR), Spark fait toute transformation sur mémoire
 
 RDD: set de data, repartie sur plusieurs machines
+un peu comme vecteur, mais paralisé
 
 dataset FB dispo sur kaggle
 
