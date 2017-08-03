@@ -16,3 +16,5 @@ Il y a une config par default pour SparkContext.
 
 顺便被安利了一个pyspark的教学文档：
 <http://tutoriels-data-mining.blogspot.fr/2016/05/programmation-python-sous-spark-avec.html>
+
+近日被同事嫌弃代码风格，反思和到处找文档和参考意见，开始用pycharm debug，顺便看到一篇经验文： <http://www.techug.com/post/secret-of-no-bug-development.html>
