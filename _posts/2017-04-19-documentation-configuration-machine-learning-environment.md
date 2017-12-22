@@ -258,10 +258,13 @@ iface lo inet loopback
 export http_proxy
 export https_proxy 
 export ftp_proxy
+sudo -E python get-pip.py
+
 
 proxy navigateur
 
 modify /etc/environment
+vi ~/.bashrc
 
 create /etc/apt/apt.conf
 ```
