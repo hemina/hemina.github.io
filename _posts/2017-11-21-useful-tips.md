@@ -109,3 +109,56 @@ From Chrome browser on host Mac, open "http://localhost:8000"
 
 几天后再开机发现ssh无法连接？
 是因为mac的ip地址网段自动变更了，需要重新修改虚拟机的ip，保证两台机器仍在同一网段里
+
+## scp
+```
+scp faq_all.csv mina@30.19.172.15:faq.csv
+```
+
+## load and save csv in pandas
+```
+pd.read_csv('faq.csv', index_col=0)
+
+df.to_csv('faq.csv')
+
+```
+
+## 让程序在前台后台之间切换
+Linux 提供了 fg 和 bg 命令，让你轻松调度正在运行的任务。
+假设你发现前台运行的一个程序需要很长的时间，但是需要干其他的事情，你就可以用 Ctrl-Z ，挂起这个程序，然后可以看到系统提示：
+[1]+ Stopped /root/bin/rsync.sh
+然后我们可以把程序调度到后台执行：（bg 后面的数字为作业号）
+
+`bg 1`
+
+[1]+ /root/bin/rsync.sh &
+
+
+用 jobs 命令查看正在运行的任务：
+
+`jobs`
+
+[1]+ Running /root/bin/rsync.sh &
+
+
+如果想把它调回到前台运行，可以用
+
+`fg 1`
+
+/root/bin/rsync.sh
+这样，你在控制台上就只能等待这个任务完成了。
+
+## Install elasticsearch-head
+npm install 出错居然是因为没有安装nodejs
+cors的三项很重要，如果不设置好会连接不上elasticsearch
+<http://www.vinin.me/b/blog/582d1d9c35c0010a5d55948e>
+<http://www.cnblogs.com/thatsit/p/6347693.html>
+
+确保启动elasticsearch之后运行head
+
+```
+sudo /bin/systemctl start elasticsearch.service
+
+cd elasticsearch-head/
+./node_modules/grunt/bin/grunt server
+```
