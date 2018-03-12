@@ -160,5 +160,19 @@ cors的三项很重要，如果不设置好会连接不上elasticsearch
 sudo /bin/systemctl start elasticsearch.service
 
 cd elasticsearch-head/
-./node_modules/grunt/bin/grunt server
+./node_modules/grunt/bin/grunt server &
+```
+
+## Ngrok
+./usr/local/ngrok http -host-header=rewrite 9200
+
+## Each time restart the VM
+if no need to change ip address
+
+```
+sudo /bin/systemctl start elasticsearch.service
+cd elasticsearch-head/
+./node_modules/grunt/bin/grunt server &
+cd ..
+jupyter notebook &
 ```
