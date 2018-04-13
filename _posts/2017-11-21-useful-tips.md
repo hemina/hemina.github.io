@@ -178,6 +178,8 @@ jupyter notebook &
 ```
 
 ## Convert dict to json
+Attention: the json result is a string! not dict
+
 ```
 import json
 json.dumps(dict_item)
@@ -195,4 +197,10 @@ q = query.Fuzzy(funds_name=funds_name) # fuzzy accept only single word, no phras
 ## pandas dataframe 赋值
 ```
 faq_df.loc[2,"Source / Document"]
+```
+
+## pandas dataframe filter
+```
+faq_df[faq_df["Source / Document"].notnull()]
+faq_df[faq_df["Source / Document"].isnull()]
 ```
