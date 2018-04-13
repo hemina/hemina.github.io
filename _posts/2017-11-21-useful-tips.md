@@ -176,3 +176,23 @@ cd elasticsearch-head/
 cd ..
 jupyter notebook &
 ```
+
+## Convert dict to json
+```
+import json
+json.dumps(dict_item)
+```
+
+## ES get id without error if not exist
+Funds.get(id="LU0930019582",ignore=404)
+
+## Full text search
+```
+q = Q('match', funds_name=funds_name)  # precise search
+q = query.Fuzzy(funds_name=funds_name) # fuzzy accept only single word, no phrase
+```
+
+## pandas dataframe 赋值
+```
+faq_df.loc[2,"Source / Document"]
+```
