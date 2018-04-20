@@ -184,6 +184,10 @@ Attention: the json result is a string! not dict
 import json
 json.dumps(dict_item)
 ```
+## ES delete index
+```
+curl -XDELETE localhost:9200/chatbot
+```
 
 ## ES get id without error if not exist
 Funds.get(id="LU0930019582",ignore=404)
