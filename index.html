@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HE Mina — 音乐家 · 舞者 · 创作者</title>
+<title>HE Mina</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600&family=Noto+Serif+SC:wght@300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
 
@@ -21,6 +22,7 @@
     <li><a href="#concert">音乐厅</a></li>
     <li><a href="#dance">舞房</a></li>
     <li><a href="#library">书房</a></li>
+    <li><a href="#blog">日志</a></li>
     <li><a href="#memory">记忆</a></li>
     <li><a href="#about">关于</a></li>
     <li><a href="#contact">联系</a></li>
@@ -32,9 +34,9 @@
   <div class="hero-img"></div>
   <div class="hero-bg"></div>
   <div class="hero-content">
-    <p class="hero-eyebrow">竖琴家 · 作曲家 · 舞者 · 创作者</p>
+    <p class="hero-eyebrow">竖琴。舞蹈。写作。我用不同的语言，练习同一件事 —— 成为自己</p>
     <h1 class="hero-name">HE<br><em>Mina</em></h1>
-    <p class="hero-subtitle">HARPIST · COMPOSER · DANCER · CREATOR</p>
+    <p class="hero-subtitle">HARPIST · COMPOSER · DANCER · CREATOR · <a href="https://www.linkedin.com/in/hemina1/" target="_blank">DATA SCIENTIST</a></p>
     <div class="hero-cta">
       <a href="#concert" class="btn">音乐厅</a>
       <a href="#salon" class="btn">进入我的世界</a>
@@ -58,13 +60,13 @@
     <div class="divider"></div>
     <p class="salon-intro reveal">
       每个创作者都有一座内心的殿堂，里面住着那些点亮过自己的人。<br>
-      他们是我的灵感之源，我的镜子，我的路标。
+      他们是我的灵感之源，我的地图，我的路标。
     </p>
 
     <div class="rolemodels-grid">
       <!-- Max Richter -->
       <div class="rolemodel-card reveal">
-        <div class="rm-placeholder">♪</div>
+        <img src="photos/role-models/max_richter.jpg" alt="Max Richter" class="rm-image">
         <div class="rm-overlay">
           <span class="rm-name">Max Richter</span>
           <span class="rm-role">作曲家 · 新古典主义</span>
@@ -72,7 +74,7 @@
       </div>
       <!-- Joe Hisaishi -->
       <div class="rolemodel-card reveal">
-        <div class="rm-placeholder">🎼</div>
+        <img src="photos/role-models/joe_hisaishi.jpg" alt="Joe Hisaishi" class="rm-image">
         <div class="rm-overlay">
           <span class="rm-name">Joe Hisaishi</span>
           <span class="rm-role">久石让 · 电影配乐大师</span>
@@ -80,7 +82,7 @@
       </div>
       <!-- Gwenaël Kerleo -->
       <div class="rolemodel-card reveal">
-        <div class="rm-placeholder">🪘</div>
+        <img src="photos/role-models/gwenael_kerleo.jpg" alt="Gwenaël Kerleo" class="rm-image">
         <div class="rm-overlay">
           <span class="rm-name">Gwenaël Kerleo</span>
           <span class="rm-role">竖琴作曲家 · 导师</span>
@@ -88,15 +90,23 @@
       </div>
       <!-- Cécile Corbel -->
       <div class="rolemodel-card reveal">
-        <div class="rm-placeholder">🎵</div>
+        <img src="photos/role-models/cecile_corbel.jpg" alt="Cécile Corbel" class="rm-image">
         <div class="rm-overlay">
           <span class="rm-name">Cécile Corbel</span>
           <span class="rm-role">Celtic Harpist · Singer</span>
         </div>
       </div>
+      <!-- Deborah Henson-Conant -->
+      <div class="rolemodel-card reveal">
+        <img src="photos/role-models/deborah_henson_conant.jpg" alt="Deborah Henson-Conant" class="rm-image">
+        <div class="rm-overlay">
+          <span class="rm-name">Deborah Henson-Conant</span>
+          <span class="rm-role">Jazz Harpist</span>
+        </div>
+      </div>
       <!-- Juliette Armanet -->
       <div class="rolemodel-card reveal">
-        <div class="rm-placeholder">🌹</div>
+        <img src="photos/role-models/juliette_armanet.jpg" alt="Juliette Armanet" class="rm-image">
         <div class="rm-overlay">
           <span class="rm-name">Juliette Armanet</span>
           <span class="rm-role">Singer-Songwriter · 诗意</span>
@@ -104,7 +114,7 @@
       </div>
       <!-- Antoine Lefort -->
       <div class="rolemodel-card reveal">
-        <div class="rm-placeholder">🎭</div>
+        <img src="photos/role-models/antoine_lefort.jpg" alt="Antoine Lefort" class="rm-image">
         <div class="rm-overlay">
           <span class="rm-name">Antoine Lefort</span>
           <span class="rm-role">音乐剧 · 表演者</span>
@@ -112,7 +122,7 @@
       </div>
       <!-- Kaori Ito -->
       <div class="rolemodel-card reveal">
-        <div class="rm-placeholder">💫</div>
+        <img src="photos/role-models/kaori_ito.jpg" alt="Kaori Ito" class="rm-image">
         <div class="rm-overlay">
           <span class="rm-name">Kaori Ito</span>
           <span class="rm-role">舞蹈家 · 身体诗学</span>
@@ -120,7 +130,7 @@
       </div>
       <!-- Elena Ferrante -->
       <div class="rolemodel-card reveal">
-        <div class="rm-placeholder">📖</div>
+        <img src="photos/role-models/elena_ferrante.jpg" alt="Elena Ferrante" class="rm-image">
         <div class="rm-overlay">
           <span class="rm-name">Elena Ferrante</span>
           <span class="rm-role">作家 · 女性叙事</span>
@@ -128,7 +138,7 @@
       </div>
       <!-- Sally Rooney -->
       <div class="rolemodel-card reveal">
-        <div class="rm-placeholder">✍</div>
+        <img src="photos/role-models/sally_rooney.jpg" alt="Sally Rooney" class="rm-image">
         <div class="rm-overlay">
           <span class="rm-name">Sally Rooney</span>
           <span class="rm-role">小说家 · 当代声音</span>
@@ -136,7 +146,7 @@
       </div>
       <!-- Elizabeth Gilbert -->
       <div class="rolemodel-card reveal">
-        <div class="rm-placeholder">✨</div>
+        <img src="photos/role-models/elizabeth_gilbert.jpg" alt="Elizabeth Gilbert" class="rm-image">
         <div class="rm-overlay">
           <span class="rm-name">Elizabeth Gilbert</span>
           <span class="rm-role">Big Magic · 创意自由</span>
@@ -144,7 +154,7 @@
       </div>
       <!-- Julia Cameron -->
       <div class="rolemodel-card reveal">
-        <div class="rm-placeholder">🌅</div>
+        <img src="photos/role-models/julia_cameron.jpg" alt="Julia Cameron" class="rm-image">
         <div class="rm-overlay">
           <span class="rm-name">Julia Cameron</span>
           <span class="rm-role">The Artist's Way · 艺术之道</span>
@@ -166,7 +176,13 @@
     </div>
     <div class="divider"></div>
     <p class="salon-intro reveal" style="color:rgba(245,240,232,0.6);">
-      竖琴是我与世界对话的语言。古典、凯尔特、爵士、即兴——每种声音都是一扇窗。
+      竖琴不是乐器，是一次迟来的相遇。
+
+有些人从小练琴。
+我是成年后，才听见那一声属于我的回声。
+
+古典、凯尔特、爵士、即兴——
+我不是在选择风格，我在寻找可能性。
     </p>
 
     <div class="video-grid">
@@ -217,6 +233,7 @@
     <div class="gold-line" style="margin-top:4rem;"></div>
     <div class="reveal" style="margin-top:2rem;">
       <p class="section-label">COMPOSITIONS ORIGINALES — 原创作品</p>
+      <p class="section-label">有些旋律不是创作出来的，它们只是等我允许它们存在。</p>
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;margin-top:1.5rem;">
         <div style="padding:1.5rem;border:1px solid rgba(201,168,76,0.15);background:rgba(201,168,76,0.03);">
           <p style="color:var(--gold-light);font-size:0.9rem;margin-bottom:0.3rem;">Starlit Dreams</p>
@@ -308,14 +325,20 @@
     </div>
     <div class="divider"></div>
     <p class="salon-intro reveal" style="color:rgba(245,240,232,0.6);">
-      我用幕布记录阅读的轨迹——那些改变了我看世界方式的书，和它们留下的印记。
+      阅读是我最隐秘的野心。
+
+有些书改变观点。
+有些书改变命运。
+
+我记录的不是摘要，
+是我在阅读时，悄悄发生的偏移。
     </p>
 
     <div class="books-grid">
       <a href="https://share.mubu.com/doc/5Y6IOaFN-4A" target="_blank" class="book-card reveal">
         <p class="book-number">NOTE 01</p>
         <p class="book-title">《创意工作流》</p>
-        <p class="book-desc">关于创意流动的艺术——如何让灵感变成作品的完整旅程</p>
+        <p class="book-desc">关于创意流动的艺术——让灵感变成作品的完整旅程</p>
         <span class="book-arrow">↗</span>
       </a>
       <a href="https://share.mubu.com/doc/4QfLotJfwkA" target="_blank" class="book-card reveal">
@@ -339,7 +362,7 @@
       <a href="https://share.mubu.com/doc/1aZ_Svyau4A" target="_blank" class="book-card reveal">
         <p class="book-number">NOTE 05</p>
         <p class="book-title">《12周一年》</p>
-        <p class="book-desc">The 12 Week Year — 把一年压缩成12周的高效执行系统</p>
+        <p class="book-desc">The 12 Week Year — 12周的高效执行迭代系统</p>
         <span class="book-arrow">↗</span>
       </a>
       <a href="https://share.mubu.com/doc/4tnhWuvaq4A" target="_blank" class="book-card reveal">
@@ -370,8 +393,7 @@
     </div>
     <div class="divider"></div>
     <p class="memory-intro reveal">
-      每一张照片都是一扇窗，窗里住着那个曾经的自己。<br>
-      从汨罗到巴黎，从婴儿车到竖琴，从代码到舞台——<br>
+      从汨罗到巴黎，从舞蹈到竖琴，从代码到创作——<br>
       我是所有这些时刻的总和。
     </p>
 
@@ -380,10 +402,15 @@
       <!-- AGE 0: 婴儿 -->
       <div class="timeline-entry tl-left reveal">
         <div class="tl-photo">
-          <div class="tl-photo-frame">
-            <img src="photos/00.JPG" alt="0岁" loading="lazy">
-            <span class="tl-age-badge">0岁 · 1992</span>
+          <div class="tl-collage">
+            <div class="tl-photo-frame" style="aspect-ratio:3/4">
+              <img src="photos/00.JPG" alt="0岁" loading="lazy">
+            </div>
+            <div class="tl-photo-frame" style="aspect-ratio:3/4">
+              <img src="photos/00_1.JPG" alt="0岁" loading="lazy">
+            </div>
           </div>
+          <span class="tl-age-badge" style="position:static;display:inline-block;margin-top:0.5rem;">0岁 · 1992</span>
         </div>
         <div class="tl-node">
           <div class="tl-dot"></div>
@@ -392,28 +419,28 @@
         <div class="tl-text">
           <p class="tl-era">NAISSANCE · 诞生</p>
           <h3 class="tl-title">世界，<em>你好</em></h3>
-          <p class="tl-story">1992年，湖南汨罗。一个女孩来到世界，带着还未被命名的所有可能性。那双眼睛，已经在好奇地打量这个陌生的宇宙。</p>
+          <p class="tl-story">1992年，湖南汨罗。一个女孩来到世界，带着还未被命名的所有可能性。用那双黑葡萄般眼睛，好奇地打量这个陌生的宇宙。</p>
           <div class="tl-tags"><span class="tl-tag">汨罗</span><span class="tl-tag">诞生</span></div>
         </div>
       </div>
 
       <!-- AGE 3: 幼年 -->
-      <div class="timeline-entry tl-right reveal">
-        <div class="tl-photo">
-          <div class="tl-photo-frame">
-            <img src="photos/03.JPG" alt="3岁" loading="lazy">
-            <span class="tl-age-badge">3岁 · 1995</span>
-          </div>
-        </div>
+      <div class="timeline-entry tl-right reveal">   
         <div class="tl-node">
           <div class="tl-dot"></div>
           <span class="tl-year-label">1995</span>
         </div>
         <div class="tl-text">
           <p class="tl-era">ENFANCE · 童年初章</p>
-          <h3 class="tl-title">第一次<em>穿上戏服</em></h3>
-          <p class="tl-story">穿着大棉袄，手里握着苹果，已经懂得在镜头前展示笑容。也许就在这一刻，表演的种子悄悄落进了心里。</p>
-          <div class="tl-tags"><span class="tl-tag">传统服饰</span><span class="tl-tag">表演启蒙</span></div>
+          <h3 class="tl-title">小红帽</em></h3>
+          <p class="tl-story">手握苹果，睥睨人间。</p>
+          <div class="tl-tags"><span class="tl-tag">大红袄</span><span class="tl-tag">妈妈的围巾</span></div>
+        </div>
+        <div class="tl-photo">
+          <div class="tl-photo-frame">
+            <img src="photos/03.JPG" alt="3岁" loading="lazy">
+            <span class="tl-age-badge">3岁 · 1995</span>
+          </div>
         </div>
       </div>
 
@@ -431,24 +458,19 @@
         </div>
         <div class="tl-text">
           <p class="tl-era">FAMILLE · 根</p>
-          <h3 class="tl-title">父母是<em>第一片大地</em></h3>
-          <p class="tl-story">爸爸单位组织团建一起去韶山旅行，爸爸妈妈笑着，中间是小小的Mina。那时候世界很小，家就是全部。这份安全感，是后来所有远行的底气。</p>
-          <div class="tl-tags"><span class="tl-tag">家</span><span class="tl-tag">汨罗记忆</span></div>
+          <h3 class="tl-title">第一次旅行</em></h3>
+          <p class="tl-story">爸爸单位组织团建一起去韶山旅行，爸爸妈妈笑着，中间是小小的Mina。那时候世界很小，家就是全部。</p>
+          <div class="tl-tags"><span class="tl-tag">家</span><span class="tl-tag">韶山旅行</span></div>
         </div>
       </div>
 
-      <!-- AGE 6: 幼年贝雷帽 -->
+      <!-- AGE 6: 贝雷帽 -->
       <div class="timeline-entry tl-right reveal">
         <div class="tl-photo">
-          <div class="tl-collage">
-            <div class="tl-photo-frame" style="aspect-ratio:3/4">
-              <img src="photos/06.jpg" alt="6岁" loading="lazy">
-            </div>
-            <div class="tl-photo-frame" style="aspect-ratio:3/4">
-              <img src="photos/07.JPG" alt="7岁" loading="lazy">
-            </div>
+          <div class="tl-photo-frame" style="aspect-ratio:3/4">
+            <img src="photos/06.jpg" alt="6岁" loading="lazy">
+            <span class="tl-age-badge">6岁 · 1998</span>
           </div>
-          <span class="tl-age-badge" style="position:static;display:inline-block;margin-top:0.5rem;">6-7岁 · 1998</span>
         </div>
         <div class="tl-node">
           <div class="tl-dot"></div>
@@ -456,9 +478,29 @@
         </div>
         <div class="tl-text">
           <p class="tl-era">STYLE · 自我初现</p>
-          <h3 class="tl-title">小贝雷帽，<em>大主意</em></h3>
-          <p class="tl-story">粉色外套、贝雷帽、认真的小脸——已经有了自己的气场。还有那张拿着书的照片，好像在预告很多年后的巴黎。</p>
-          <div class="tl-tags"><span class="tl-tag">时尚感</span><span class="tl-tag">阅读</span></div>
+          <h3 class="tl-title">六一儿童节</h3>
+          <p class="tl-story">第一次去影楼穿公主裙拍艺术照。那时的我多希望自己有长头发。</p>
+          <div class="tl-tags"><span class="tl-tag">与妈妈相似的脸</span></div>
+        </div>
+      </div>
+
+      <!-- AGE 7: 阅读 -->
+      <div class="timeline-entry tl-left reveal">
+        <div class="tl-photo">
+          <div class="tl-photo-frame" style="aspect-ratio:3/4">
+            <img src="photos/07.JPG" alt="7岁" loading="lazy">
+            <span class="tl-age-badge">7岁 · 1999</span>
+          </div>
+        </div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <span class="tl-year-label">1999</span>
+        </div>
+        <div class="tl-text">
+          <p class="tl-era">LECTURE · 书籍的童年</p>
+          <h3 class="tl-title">拿着书的<em>小女孩</em></h3>
+          <p class="tl-story">七岁就开始拿着书。阅读是最早的秘密冒险。</p>
+          <div class="tl-tags"><span class="tl-tag">阅读</span><span class="tl-tag">想象力</span></div>
         </div>
       </div>
 
@@ -475,7 +517,7 @@
           <span class="tl-year-label">2000</span>
         </div>
         <div class="tl-text">
-          <p class="tl-era">AMOUR · 爱</p>
+          <p class="tl-era">还珠格格</p>
           <h3 class="tl-title">妈妈的<em>怀抱</em></h3>
           <p class="tl-story">一张母女合照，两个相似的笑容。那时的她还不知道，有一天会只身飞往巴黎，用一首首歌和舞告慰对家的思念。</p>
           <div class="tl-tags"><span class="tl-tag">母女</span><span class="tl-tag">温柔</span></div>
@@ -502,72 +544,156 @@
         </div>
       </div>
 
+      <!-- AGE 9: 少女 -->
+      <div class="timeline-entry tl-left reveal">
+        <div class="tl-photo">
+          <div class="tl-photo-frame">
+            <img src="photos/09.jpg" alt="9岁" loading="lazy">
+            <span class="tl-age-badge">9岁 · 2001</span>
+          </div>
+        </div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <span class="tl-year-label">2001</span>
+        </div>
+        <div class="tl-text">
+          <p class="tl-era">JEUNESSE · 少女</p>
+          <h3 class="tl-title">成长的<em>中间</em></h3>
+          <p class="tl-story">九岁的光阴，已开始展现独特的气质。那份属于少女的神秘，正在悄悄酝酿。</p>
+          <div class="tl-tags"><span class="tl-tag">汨罗</span><span class="tl-tag">少女时代</span></div>
+        </div>
+      </div>
+
       <div class="memory-interlude reveal">
         <p class="interlude-text">从汨罗到世界，<br>每一个<em>"第一次"</em>都是一扇打开的门。</p>
       </div>
 
-      <!-- AGE 14: 少年 -->
+      <!-- AGE 14: 青春的开始 -->
       <div class="timeline-entry tl-left reveal">
         <div class="tl-photo">
-          <div class="tl-collage">
-            <div class="tl-photo-frame" style="aspect-ratio:3/4">
-              <img src="photos/14.JPG" alt="14岁" loading="lazy">
-            </div>
-            <div class="tl-photo-frame" style="aspect-ratio:3/4">
-              <img src="photos/16.jpg" alt="16岁" loading="lazy">
-            </div>
+          <div class="tl-photo-frame" style="aspect-ratio:3/4">
+            <img src="photos/14.JPG" alt="14岁" loading="lazy">
+            <span class="tl-age-badge">14岁 · 2006</span>
           </div>
-          <span class="tl-age-badge" style="position:static;display:inline-block;margin-top:0.5rem;">14-16岁 · 2006-08</span>
         </div>
         <div class="tl-node">
           <div class="tl-dot"></div>
           <span class="tl-year-label">2006</span>
         </div>
         <div class="tl-text">
-          <p class="tl-era">ADOLESCENCE · 少年时</p>
+          <p class="tl-era">ADOLESCENCE · 少年初期</p>
           <h3 class="tl-title">我是<em>谁？</em></h3>
-          <p class="tl-story">相机自拍，好奇地凝视镜头，还有宿舍里和好友的照片。青春期的她，已经有了一股子不服输的劲，只是还不知道用在哪里。</p>
-          <div class="tl-tags"><span class="tl-tag">青春</span><span class="tl-tag">寻找自我</span></div>
+          <p class="tl-story">十四岁，相机自拍。好奇地凝视镜头，开始问自己这个问题。青春期的她，已经有了一股子不服输的劲。</p>
+          <div class="tl-tags"><span class="tl-tag">青春</span><span class="tl-tag">自我探索</span></div>
         </div>
       </div>
 
-      <!-- AGE 17: 凤凰古城 / 舞台 -->
+      <!-- AGE 15: 少女的中段 -->
       <div class="timeline-entry tl-right reveal">
         <div class="tl-photo">
-          <div class="tl-collage">
-            <div class="tl-photo-frame" style="aspect-ratio:3/4">
-              <img src="photos/17.jpg" alt="17岁" loading="lazy">
-            </div>
-            <div class="tl-photo-frame" style="aspect-ratio:3/4">
-              <img src="photos/18.jpg" alt="18岁" loading="lazy">
-            </div>
+          <div class="tl-photo-frame" style="aspect-ratio:3/4">
+            <img src="photos/15.JPG" alt="15岁" loading="lazy">
+            <span class="tl-age-badge">15岁 · 2007</span>
           </div>
-          <span class="tl-age-badge" style="position:static;display:inline-block;margin-top:0.5rem;">17-18岁 · 2009-10</span>
+        </div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <span class="tl-year-label">2007</span>
+        </div>
+        <div class="tl-text">
+          <p class="tl-era">ADOLESCENCE · 中学时光</p>
+          <h3 class="tl-title">宿舍里与<em>好友</em>同行</h3>
+          <p class="tl-story">十五岁的她，在宿舍里和好友的照片。那些看似平凡的时刻，却是生命中最珍贵的片段。</p>
+          <div class="tl-tags"><span class="tl-tag">友谊</span><span class="tl-tag">青春</span></div>
+        </div>
+      </div>
+
+      <!-- AGE 16: 少女的尾声 -->
+      <div class="timeline-entry tl-left reveal">
+        <div class="tl-photo">
+          <div class="tl-photo-frame" style="aspect-ratio:3/4">
+            <img src="photos/16.jpg" alt="16岁" loading="lazy">
+            <span class="tl-age-badge">16岁 · 2008</span>
+          </div>
+        </div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <span class="tl-year-label">2008</span>
+        </div>
+        <div class="tl-text">
+          <p class="tl-era">ADOLESCENCE · 少年尾声</p>
+          <h3 class="tl-title">高中的自己</h3>
+          <p class="tl-story">十六岁了，已经在思考大学、思考未来。那份青春的迷茫与坚定，都写在脸上。</p>
+          <div class="tl-tags"><span class="tl-tag">高中</span><span class="tl-tag">成长</span></div>
+        </div>
+      </div>
+
+      <!-- AGE 17: 凤凰古城 -->
+      <div class="timeline-entry tl-right reveal">
+        <div class="tl-photo">
+          <div class="tl-photo-frame" style="aspect-ratio:3/4">
+            <img src="photos/17.jpg" alt="17岁" loading="lazy">
+            <span class="tl-age-badge">17岁 · 2009</span>
+          </div>
         </div>
         <div class="tl-node">
           <div class="tl-dot"></div>
           <span class="tl-year-label">2009</span>
         </div>
         <div class="tl-text">
-          <p class="tl-era">EXPLORATION · 出走与发现</p>
-          <h3 class="tl-title">凤凰古城，<em>苗族银饰</em></h3>
+          <p class="tl-era">EXPLORATION · 新世界</p>
+          <h3 class="tl-title">凤凰古城的<em>苗族银饰</em></h3>
           <p class="tl-story">穿上苗族传统服饰，在凤凰古城的河边比了个"V"——那个笑容里有一种说不清的自由感。用身体去感受文化，是她最早的田野调查。</p>
           <div class="tl-tags"><span class="tl-tag">旅行</span><span class="tl-tag">文化探索</span><span class="tl-tag">凤凰古城</span></div>
         </div>
       </div>
 
-      <!-- AGE 19-20: 大学 西电 舞台 -->
+      <!-- AGE 18: 高中毕业 -->
       <div class="timeline-entry tl-left reveal">
+        <div class="tl-photo">
+          <div class="tl-collage">
+            <div class="tl-photo-frame" style="aspect-ratio:3/4">
+              <img src="photos/18.jpg" alt="18岁" loading="lazy">
+            </div>
+            <div class="tl-photo-frame" style="aspect-ratio:3/4">
+              <img src="photos/18_1.jpg" alt="18岁" loading="lazy">
+            </div>
+          </div>
+          <span class="tl-age-badge" style="position:static;display:inline-block;margin-top:0.5rem;">18岁 · 2010</span>
+        </div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <span class="tl-year-label">2010</span>
+        </div>
+        <div class="tl-text">
+          <p class="tl-era">TRANSITION · 成人进行式</p>
+          <h3 class="tl-title">高中毕业</h3>
+          <p class="tl-story">十八岁，已经准备好拥抱大学、拥抱更广阔的世界。那份青春的热血和梦想，写满了整张脸。</p>
+          <div class="tl-tags"><span class="tl-tag">成长</span><span class="tl-tag">高中毕业</span><span class="tl-tag">新起点</span></div>
+        </div>
+      </div>
+
+      <!-- AGE 19: 大学第一年 -->
+      <div class="timeline-entry tl-right reveal">
         <div class="tl-photo">
           <div class="tl-collage">
             <div class="tl-photo-frame landscape" style="grid-column:1/-1;aspect-ratio:16/9">
               <img src="photos/19.jpg" alt="19岁" loading="lazy" style="object-position:center center;">
             </div>
             <div class="tl-photo-frame" style="aspect-ratio:4/3">
-              <img src="photos/20.jpg" alt="20岁" loading="lazy">
+              <img src="photos/19_1.jpg" alt="19岁" loading="lazy">
+            </div>
+            <div class="tl-photo-frame" style="aspect-ratio:4/3">
+              <img src="photos/19_2.jpg" alt="19岁" loading="lazy">
+            </div>
+            <div class="tl-photo-frame" style="aspect-ratio:4/3">
+              <img src="photos/19_3.jpg" alt="19岁" loading="lazy">
+            </div>
+            <div class="tl-photo-frame landscape" style="grid-column:1/-1;aspect-ratio:16/9">
+              <img src="photos/19_4.jpg" alt="19岁" loading="lazy" style="object-position:center center;">
             </div>
           </div>
-          <span class="tl-age-badge" style="position:static;display:inline-block;margin-top:0.5rem;">19-20岁 · 2011</span>
+          <span class="tl-age-badge" style="position:static;display:inline-block;margin-top:0.5rem;">19岁 · 2011</span>
         </div>
         <div class="tl-node">
           <div class="tl-dot"></div>
@@ -575,9 +701,37 @@
         </div>
         <div class="tl-text">
           <p class="tl-era">UNIVERSITÉ · 西安电子科技大学</p>
-          <h3 class="tl-title">代码与<em>舞台</em>同在</h3>
-          <p class="tl-story">白天学电信工程，晚上在舞台上跳"A Great River"拿了全国大赛一等奖。她是那个宿舍笑得最大声的女生，也是凌晨还在调程序的人。</p>
-          <div class="tl-tags"><span class="tl-tag">西安电子科技大学</span><span class="tl-tag">舞蹈比赛一等奖</span><span class="tl-tag">工程师</span></div>
+          <h3 class="tl-title">大学的<em>舞台生活</em></h3>
+          <p class="tl-story">十九岁，在西电开启新的篇章。晚上在舞台上跳"A Great River"，白天还在宿舍里笑得最大声。大学舞蹈队的她，已经崭露头角。</p>
+          <div class="tl-tags"><span class="tl-tag">西安电子科技大学</span><span class="tl-tag">舞蹈队</span><span class="tl-tag">大学初年</span></div>
+        </div>
+      </div>
+
+      <!-- AGE 20: 大学第二年 -->
+      <div class="timeline-entry tl-left reveal">
+        <div class="tl-photo">
+          <div class="tl-collage">
+            <div class="tl-photo-frame" style="aspect-ratio:4/3">
+              <img src="photos/20.jpg" alt="20岁" loading="lazy">
+            </div>
+            <div class="tl-photo-frame" style="aspect-ratio:4/3">
+              <img src="photos/20_1.jpg" alt="20岁" loading="lazy">
+            </div>
+            <div class="tl-photo-frame" style="aspect-ratio:4/3">
+              <img src="photos/20_2.JPG" alt="20岁" loading="lazy">
+            </div>
+          </div>
+          <span class="tl-age-badge" style="position:static;display:inline-block;margin-top:0.5rem;">20岁 · 2012</span>
+        </div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <span class="tl-year-label">2012</span>
+        </div>
+        <div class="tl-text">
+          <p class="tl-era">UNIVERSITÉ · 代码与舞蹈</p>
+          <h3 class="tl-title">二十岁的<em>双重身份</em></h3>
+          <p class="tl-story">白天学电信工程，晚上在舞蹈队备赛。二十岁的她，已经找到了在代码与舞蹈之间完美的平衡。全国大赛一等奖，正在路上。</p>
+          <div class="tl-tags"><span class="tl-tag">舞蹈比赛一等奖</span><span class="tl-tag">工程师</span><span class="tl-tag">多才</span></div>
         </div>
       </div>
 
@@ -598,6 +752,79 @@
           <h3 class="tl-title">2011年陕西园艺博览会<em>演出</em></h3>
           <p class="tl-story">黄色演出服，和队友相拥而笑。大学舞蹈团的她，参加了西安国际园艺博览会的表演——舞台越来越大，胆子越来越壮。</p>
           <div class="tl-tags"><span class="tl-tag">群舞</span><span class="tl-tag">大学舞蹈团</span><span class="tl-tag">陕西</span></div>
+        </div>
+      </div>
+
+      <!-- AGE 22: 演出一年后 -->
+      <div class="timeline-entry tl-left reveal">
+        <div class="tl-photo">
+          <div class="tl-collage">
+            <div class="tl-photo-frame" style="aspect-ratio:3/4">
+              <img src="photos/22.JPG" alt="22岁" loading="lazy">
+            </div>
+            <div class="tl-photo-frame" style="aspect-ratio:3/4">
+              <img src="photos/22_1.JPG" alt="22岁" loading="lazy">
+            </div>
+          </div>
+          <span class="tl-age-badge" style="position:static;display:inline-block;margin-top:0.5rem;">22岁 · 2014</span>
+        </div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <span class="tl-year-label">2014</span>
+        </div>
+        <div class="tl-text">
+          <p class="tl-era">TRANSITION · 大学生涯尾声</p>
+          <h3 class="tl-title">二十二岁的<em>反思</em></h3>
+          <p class="tl-story">大学将告一段落，社会在招手。二十二岁的她，已经成熟了许多，开始思考真正属于自己的人生。</p>
+          <div class="tl-tags"><span class="tl-tag">大学</span><span class="tl-tag">过渡 </span></div>
+        </div>
+      </div>
+
+      <!-- AGE 23: 毕业前的冒险 -->
+      <div class="timeline-entry tl-right reveal">
+        <div class="tl-photo">
+          <div class="tl-collage">
+            <div class="tl-photo-frame" style="aspect-ratio:3/4">
+              <img src="photos/23.jpg" alt="23岁" loading="lazy">
+            </div>
+            <div class="tl-photo-frame landscape" style="grid-column:1/-1;aspect-ratio:16/9">
+              <img src="photos/23_2.jpg" alt="23岁" loading="lazy" style="object-position:center center;">
+            </div>
+            <div class="tl-photo-frame landscape" style="grid-column:1/-1;aspect-ratio:16/9">
+              <img src="photos/23_3.jpg" alt="23岁" loading="lazy" style="object-position:center center;">
+            </div>
+          </div>
+          <span class="tl-age-badge" style="position:static;display:inline-block;margin-top:0.5rem;">23岁 · 2015</span>
+        </div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <span class="tl-year-label">2015</span>
+        </div>
+        <div class="tl-text">
+          <p class="tl-era">AVENTURE · 年轻的冒险</p>
+          <h3 class="tl-title">毕业前的<em>最后精彩</em></h3>
+          <p class="tl-story">二十三岁，还在西安，但已经能感受到要离开的冲动。这一年，她用行动验证了对自由的渴望。</p>
+          <div class="tl-tags"><span class="tl-tag">冒险</span><span class="tl-tag">年轻的热血</span></div>
+        </div>
+      </div>
+
+      <!-- AGE 24: 毕业 -->
+      <div class="timeline-entry tl-left reveal">
+        <div class="tl-photo">
+          <div class="tl-photo-frame" style="aspect-ratio:3/4">
+            <img src="photos/24.jpg" alt="24岁" loading="lazy">
+            <span class="tl-age-badge">24岁 · 2016</span>
+          </div>
+        </div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <span class="tl-year-label">2016</span>
+        </div>
+        <div class="tl-text">
+          <p class="tl-era">GRADUATION · 毕业</p>
+          <h3 class="tl-title">你好，<em>世界</em></h3>
+          <p class="tl-story">二十四岁，大学华章落幕。她拥抱了大学给她的一切——代码、舞蹈、友谊、爱与梦想。现在，是时候去更大的舞台了。</p>
+          <div class="tl-tags"><span class="tl-tag">毕业</span><span class="tl-tag">新开始</span></div>
         </div>
       </div>
 
@@ -625,28 +852,56 @@
         </div>
       </div>
 
-      <!-- AGE 26-27: 塞纳河 + 旅行 -->
-      <div class="timeline-entry tl-right reveal">
+      <!-- AGE 26: 塞纳河 -->
+      <div class="timeline-entry tl-left reveal">
         <div class="tl-photo">
           <div class="tl-collage">
             <div class="tl-photo-frame landscape" style="grid-column:1/-1;aspect-ratio:16/9">
               <img src="photos/26.jpeg" alt="塞纳河" loading="lazy" style="object-position:center 30%;">
             </div>
             <div class="tl-photo-frame landscape" style="grid-column:1/-1;aspect-ratio:16/9">
-              <img src="photos/27.jpeg" alt="伊比萨" loading="lazy" style="object-position:center 30%;">
+              <img src="photos/26_1.JPG" alt="26岁" loading="lazy" style="object-position:center center;">
             </div>
           </div>
-          <span class="tl-age-badge" style="position:static;display:inline-block;margin-top:0.5rem;">26-27岁 · 2018-19</span>
+          <span class="tl-age-badge" style="position:static;display:inline-block;margin-top:0.5rem;">26岁 · 2018</span>
         </div>
         <div class="tl-node">
           <div class="tl-dot"></div>
           <span class="tl-year-label">2018</span>
         </div>
         <div class="tl-text">
-          <p class="tl-era">LIBERTÉ · 自由</p>
-          <h3 class="tl-title">塞纳河的风，<em>伊比萨的飞跃</em></h3>
-          <p class="tl-story">塞纳河桥上，闭眼任风把头发吹散；伊比萨港口，穿红裙纵身一跃。这两张照片藏着同一个她：在自由里，她最像自己。</p>
-          <div class="tl-tags"><span class="tl-tag">巴黎</span><span class="tl-tag">伊比萨</span><span class="tl-tag">自由</span></div>
+          <p class="tl-era">PARIS · 塞纳河的风</p>
+          <h3 class="tl-title">二十六岁在<em>巴黎</em></h3>
+          <p class="tl-story">塞纳河桥上，闭眼任风把头发吹散。在这一刻，她感受到了真正的自由。BNP的工程师、算法的魔术师——但在巴黎的河畔，她只是一个为自由而闭眼的女孩。</p>
+          <div class="tl-tags"><span class="tl-tag">巴黎</span><span class="tl-tag">塞纳河</span><span class="tl-tag">自由</span></div>
+        </div>
+      </div>
+
+      <!-- AGE 27: 伊比萨的飞跃 -->
+      <div class="timeline-entry tl-right reveal">
+        <div class="tl-photo">
+          <div class="tl-collage">
+            <div class="tl-photo-frame landscape" style="grid-column:1/-1;aspect-ratio:16/9">
+              <img src="photos/27.jpeg" alt="伊比萨" loading="lazy" style="object-position:center 30%;">
+            </div>
+            <div class="tl-photo-frame landscape" style="grid-column:1/-1;aspect-ratio:16/9">
+              <img src="photos/27_1.jpg" alt="27岁" loading="lazy" style="object-position:center center;">
+            </div>
+            <div class="tl-photo-frame landscape" style="grid-column:1/-1;aspect-ratio:16/9">
+              <img src="photos/27_2.jpeg" alt="27岁" loading="lazy" style="object-position:center center;">
+            </div>
+          </div>
+          <span class="tl-age-badge" style="position:static;display:inline-block;margin-top:0.5rem;">27岁 · 2019</span>
+        </div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <span class="tl-year-label">2019</span>
+        </div>
+        <div class="tl-text">
+          <p class="tl-era">AVENTURE · 伊比萨的飞跃</p>
+          <h3 class="tl-title">穿红裙<em>纵身一跃</em></h3>
+          <p class="tl-story">伊比萨港口的骄阳似火，她穿红裙纵身一跃。那一刻，整个生命都在说"是的，我准备好了"。</p>
+          <div class="tl-tags"><span class="tl-tag">伊比萨</span><span class="tl-tag">冒险</span><span class="tl-tag">信心</span></div>
         </div>
       </div>
 
@@ -654,7 +909,7 @@
       <div class="timeline-entry tl-left reveal">
         <div class="tl-photo">
           <div class="tl-photo-frame landscape">
-            <img src="photos/28.jpeg" alt="28岁" loading="lazy">
+            <img src="photos/28.jpg" alt="28岁" loading="lazy">
             <span class="tl-age-badge">28岁 · 2020</span>
           </div>
         </div>
@@ -670,8 +925,28 @@
         </div>
       </div>
 
-      <!-- AGE 30: 演出 -->
+      <!-- AGE 29: 准备 -->
       <div class="timeline-entry tl-right reveal">
+        <div class="tl-photo">
+          <div class="tl-photo-frame landscape">
+            <img src="photos/29.JPG" alt="29岁" loading="lazy">
+            <span class="tl-age-badge">29岁 · 2021</span>
+          </div>
+        </div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <span class="tl-year-label">2021</span>
+        </div>
+        <div class="tl-text">
+          <p class="tl-era">ATTENTE · 积累</p>
+          <h3 class="tl-title">在等待与<em>练习中</em></h3>
+          <p class="tl-story">竖琴才一年光景，但每一天的练习都像是在打通通往音乐灵魂的通道。舞台还未来，但灵魂在做准备。</p>
+          <div class="tl-tags"><span class="tl-tag">修行</span><span class="tl-tag">积累</span></div>
+        </div>
+      </div>
+
+      <!-- AGE 30: 完全的演奏家 -->
+      <div class="timeline-entry tl-left reveal">
         <div class="tl-photo">
           <div class="tl-collage">
             <div class="tl-photo-frame landscape" style="grid-column:1/-1;aspect-ratio:16/9">
@@ -692,12 +967,71 @@
         </div>
       </div>
 
-      <!-- AGE 33: 现在 -->
+      <!-- AGE 31: 艺术家的2023 -->
+      <div class="timeline-entry tl-right reveal">
+        <div class="tl-photo">
+          <div class="tl-collage">
+            <div class="tl-photo-frame landscape" style="grid-column:1/-1;aspect-ratio:16/9">
+              <img src="photos/31.JPG" alt="31岁" loading="lazy" style="object-position:center center;">
+            </div>
+            <div class="tl-photo-frame landscape" style="grid-column:1/-1;aspect-ratio:16/9">
+              <img src="photos/31_1.jpg" alt="31岁" loading="lazy" style="object-position:center center;">
+            </div>
+            <div class="tl-photo-frame landscape" style="grid-column:1/-1;aspect-ratio:16/9">
+              <img src="photos/31_2.JPG" alt="31岁" loading="lazy" style="object-position:center center;">
+            </div>
+          </div>
+          <span class="tl-age-badge" style="position:static;display:inline-block;margin-top:0.5rem;">31岁 · 2023</span>
+        </div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <span class="tl-year-label">2023</span>
+        </div>
+        <div class="tl-text">
+          <p class="tl-era">ARTISTE · 艺术家</p>
+          <h3 class="tl-title">艺术的<em>觉醒之年</em></h3>
+          <p class="tl-story">三十一岁，舞蹈、竖琴、作曲，每一个身份都在闪闪发光。中国古典舞的舞台、竖琴的年度演出、代码背后的诗意——她的灵魂已经完全同步。</p>
+          <div class="tl-tags"><span class="tl-tag">中国古典舞</span><span class="tl-tag">竖琴演出</span><span class="tl-tag">创作巅峰</span></div>
+        </div>
+      </div>
+
+      <!-- AGE 32: 继续绽放 -->
       <div class="timeline-entry tl-left reveal">
+        <div class="tl-photo">
+          <div class="tl-collage">
+            <div class="tl-photo-frame landscape" style="grid-column:1/-1;aspect-ratio:16/9">
+              <img src="photos/32.JPG" alt="32岁" loading="lazy" style="object-position:center center;">
+            </div>
+            <div class="tl-photo-frame landscape" style="grid-column:1/-1;aspect-ratio:16/9">
+              <img src="photos/32_1.JPG" alt="32岁" loading="lazy" style="object-position:center center;">
+            </div>
+            <div class="tl-photo-frame landscape" style="grid-column:1/-1;aspect-ratio:16/9">
+              <img src="photos/32_2.JPG" alt="32岁" loading="lazy" style="object-position:center center;">
+            </div>
+          </div>
+          <span class="tl-age-badge" style="position:static;display:inline-block;margin-top:0.5rem;">32岁 · 2024</span>
+        </div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <span class="tl-year-label">2024</span>
+        </div>
+        <div class="tl-text">
+          <p class="tl-era">CRÉATION · 继续绽放</p>
+          <h3 class="tl-title">三十二岁的<em>从容</em></h3>
+          <p class="tl-story">从容、自信、深度。三十二岁的她，已经不再需要向世界证明什么。每一个舞蹈、每一个音符、每一行代码，都在诠释她的灵魂。</p>
+          <div class="tl-tags"><span class="tl-tag">成熟</span><span class="tl-tag">深度创作</span><span class="tl-tag">完美平衡</span></div>
+        </div>
+      </div>
+
+      <!-- AGE 33: 现在 -->
+      <div class="timeline-entry tl-right reveal">
         <div class="tl-photo">
           <div class="tl-collage">
             <div class="tl-photo-frame" style="aspect-ratio:3/4">
               <img src="photos/33.JPG" alt="33岁" loading="lazy" style="object-position:center 20%;">
+            </div>
+            <div class="tl-photo-frame" style="aspect-ratio:3/4">
+              <img src="photos/33_1.JPG" alt="33岁" loading="lazy">
             </div>
             <div class="tl-photo-frame" style="aspect-ratio:3/4">
               <img src="photos/2_Gabi_75.jpg" alt="Mina with harp" loading="lazy">
@@ -727,6 +1061,29 @@
       </div>
 
     </div><!-- end timeline-track -->
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+  <div class="section-inner">
+    <div class="room-door reveal">
+      <span class="room-icon">✍️</span>
+      <div>
+        <p class="section-label">JOURNAL — 日志</p>
+        <h2 class="section-title">灵感<em>碎片</em></h2>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <p class="blog-intro reveal">
+      思想在流动。它们需要被记录，被思考，被分享。<br>
+      这里是我的想法的家园——关于音乐、舞蹈、代码、生活和所有在两者之间的东西。
+    </p>
+
+    <div class="blog-list" id="blog-list">
+      <!-- Blog posts will be loaded here -->
+      <div class="blog-loading reveal">Loading blog posts...</div>
+    </div>
   </div>
 </section>
 
