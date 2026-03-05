@@ -895,20 +895,20 @@
   @media (max-width: 768px) {
     .timeline-track::before { left: 20px; }
     .timeline-entry {
-      grid-template-columns: 40px 1fr;
-      grid-template-rows: auto auto;
+      grid-template-columns: 40px 1fr 1fr;
+      grid-template-rows: auto;
     }
     .tl-left .tl-photo, .tl-right .tl-photo { 
       grid-column: 2; grid-row: 1; 
-      justify-self: start; padding-left: 1rem; padding-right: 0;
+      justify-self: start; padding-left: 1rem; padding-right: 0.5rem;
     }
     .tl-node { grid-column: 1; grid-row: 1; align-self: start; padding-top: 1rem; }
     .tl-left .tl-text, .tl-right .tl-text { 
-      grid-column: 2; grid-row: 2; 
-      text-align: left; padding-left: 1rem; padding-right: 0;
+      grid-column: 3; grid-row: 1; 
+      text-align: left; padding-left: 0.5rem; padding-right: 0;
     }
     .tl-right .tl-tags { justify-content: flex-start; }
-    .tl-photo-frame { width: 100%; }
+    .tl-photo-frame { width: clamp(100px, 20vw, 200px); aspect-ratio: 3/4 !important; }
     nav { padding: 1rem 1.5rem; }
     .nav-links { display: none; }
     section { padding: 6rem 1.5rem; }
